@@ -1,0 +1,29 @@
+.red{
+    color: rgb(29, 1, 1);
+}
+#firstdiv{
+    background-color: chocolate;
+}
+
+.black{
+    background-color: yellowgreen;
+}
+
+#seconddiv{
+    color: rgb(68, 42, 3);
+}
+
+#span{
+    background-color: forestgreen;
+}
+
+.green{
+    color: rgb(255, 255, 255);
+}
+#h4{
+    color: rgb(19, 79, 79);
+}
+#h3{
+    background: #000;
+    color: wheat;
+}
