@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Testing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Apply the Form For a Simple Testing .</h1>
+    <form action="post">
+        <div>
+            <label for="Username">Enter Your Username -> </label>
+            <input type="text" name="Username" placeholder="Enter Your Username" id="Username">
+        </div>
+        <div>
+            <input type="radio" name="Gender" id="mail">
+            <label for="mail">Mail</label>
+            <input type="radio" name="Gender" id="femail">
+            <label for="femail">Femail</label>
+        </div>
+        <input type="checkbox" name="Click" id="Click" value="Haa">
+        <label for="Click">Click for Going Next Part ...
+        </label>
+        <div>
+            <label for="commit">Enter Your Commit </label>
+            <br>
+            <textarea name="commit" id="commit" placeholder="Enter Your Advice.."></textarea>
+        </div>
+        <div>
+            <label for="selection">Select any One Option</label>
+            <select name="Name" id="selection">
+                <option value="hello">Hello</option>
+                <option value="hii">Hii</option>
+                <option value="hey">Hey</option>
+            </select>
+        </div>
+        <button type="submit">Submit Form</button>
+
+    </form>
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>
