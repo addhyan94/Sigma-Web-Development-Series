@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: lightgreen;
+            width: 220;
+            padding: 5px;
+            border: 2px solid pink;
+            margin: 5px;
+        }
+        .box1{
+            color: red;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 5px;
+            height: 10mm;
+            width: 225px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: blue;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 10px;
+            height: 20mm;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">This is Coman Class </div>
+    <div class="box box1">This is Coman + First Class </div>
+    <div class="box box2">This is Coman + Second Class </div>
+</body>
+</html>

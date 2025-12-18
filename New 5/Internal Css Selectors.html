@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Selectors </title>
+    <style>
+        /* Element Selector */
+        h3{
+            color: red
+        }
+
+        /* Class Selector */
+        .Class-1{
+            color: darkgreen;
+        }
+
+        /* Id Selector */
+        #div-id{
+            color: darkgoldenrod;
+        }
+
+        /* Child Selector */
+        div > p{
+            color: darkorchid;
+        }
+
+        /* Desender Selector  */
+        div h4{
+            color: darkred;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: auto;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: black;
+        }
+        a:link{
+            color: rgb(6, 255, 205);
+        }
+        a:active{
+            color: red;
+        }
+        a:hover{
+            background-color: rgb(0, 0, 0);
+        }
+        p:first-child{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Hello This Is a Element Selector</h3>
+
+    <div class="Class-1">This is a Div With Use  Class Selector </div>
+    <div id="div-id">This is a Div  with Use  Id selector </div>
+    <div><p>This is a div inside p with Use Child Selector </p></div>
+    <div><h4>This is a div inside h4 with Use Desender Selector </h4></div>
+    <a href="https://www.google.com">Google Per jao</a>
+    <br>
+   <a href="https://www.example.com">This is  a Example Lnk</a>
+<pre>
+       <span class="one">
+        <p>This is Div inside First Child </p>
+        <p>This is Div inside Second Child </p>
+        <p>This is Div inside Third Child </p>
+    </span>
+</pre>
+</body>
+</html>
