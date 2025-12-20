@@ -1,0 +1,23 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 25px;
+    width: 150px;
+    box-shadow: 5px 15px 5px rgba(32, 96, 93, 0.578);
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    /* text-shadow: 2px 2px 4px red; */
+    text-shadow: 5px 6px 8px #000000ad;
+    outline: 2px solid blue;
+    outline-offset: 6px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+}
