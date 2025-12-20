@@ -1,0 +1,59 @@
+body {
+    background-color: lightcyan;
+}
+
+header {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+main {
+    border: 2px solid black;
+    height: 50vmin;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+footer {
+
+    border: 2px solid black;
+    height: 10vmin;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+nav ul {
+    text-shadow: 5px 5px 15px;
+    display: flex;
+
+}
+
+nav ul li {
+    border: 2px solid black;
+    border-radius: 20px;
+    list-style-position: inside;
+    background-color: lightblue;
+    list-style-type: "💗";
+    /* list-style: circle  inside  ; */
+    /* list-style: none; */
+    padding: 5px;
+    box-shadow: 5px 5px 15px;
+
+}
+
+a:hover {
+    background-color: rgba(24, 155, 231, 0.585);
+    border-radius: 20px;
+}
+
+a:visited {
+    color: rgb(239, 3, 3);
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+}
