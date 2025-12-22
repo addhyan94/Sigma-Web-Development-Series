@@ -1,0 +1,43 @@
+:root {
+    /* Grovel Delecear Color variablas  */
+    --color: lightgreen;
+    --seccolor: rgb(66, 223, 66);
+    --navcolor: rgba(138, 249, 138, 0.804);
+    --defmer: 12px;
+    --defped: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nev {
+    background-color: var(--color);
+}
+
+ul {
+    display: flex;
+    padding: var(--defped);
+}
+
+ul li {
+    list-style: none;
+    margin: var(--defmer);
+    border: 1.2px solid black;
+    border-radius: 20px;
+    width: 50px;
+    text-align: center;
+    background-color: var(--navcolor);
+
+}
+
+li:first-child {
+    /* Local Delecear Color variablas  */
+    --color: rgb(23, 134, 23);
+    background-color: var(--color);
+}
+
+.box {
+    background-color: var(--seccolor);
+}
