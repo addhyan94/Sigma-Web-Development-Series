@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Oswald:wght@200..700&family=Quintessential&family=Tangerine:wght@400;700&display=swap');
+
+#heading{
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(13, 7, 161);
+        }
+        .texts1{
+            font-family: "Tangerine", cursive;
+            font-weight: bold;
+            font-style: normal;
+        }
+        .tests2{
+        font-family: "Quintessential", serif;
+        font-weight: 600;
+        font-style: normal;
+        }
+        .tests3{
+        font-family: "Felipa", serif;
+        font-weight: bold;
+        font-style: normal;
+        }
+        p{
+            line-height: 0.8;
+            color: darkgreen;
+            
+        }
+        .cases{
+            text-transform: capitalize;
+        }
+        
+        .l{
+            border: 2px solid rgb(0, 60, 255);
+            width: 205px;
+            /* word-break: break-all; */
+            text-overflow:inherit;
+            overflow:auto;
+            text-box-edge:inherit;
+        }
+         
+        .h{
+            text-shadow:10cm;
+            text-align: center;
+            text-transform: uppercase;
+            /* text-decoration: underline; */
+            /* text-decoration-color: rgb(13, 90, 17); */
+            /* text-decoration-style: dotted; */
+            text-decoration-thickness: 2px ;
+            /* text-indent: 45px; */
+        }
+        body{
+            background-color: lightsteelblue;
+        }
+        /* Old Code  */
+        /* #heading{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: darkcyan;
+        }
+     .texts{
+        margin: 2px;
+        padding: 5px;
+        border: 1px solid black;
+        width: 205px;
+        background-color: lightcoral;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+     } */
