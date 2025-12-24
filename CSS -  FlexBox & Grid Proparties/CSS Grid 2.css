@@ -1,0 +1,49 @@
+        :root{
+            --bodycolor:rgba(115, 245, 245, 0.833);
+            --box1color:rgb(0, 255, 255);
+            --box2color:rgb(13, 187, 187);
+            --box3color:rgb(6, 150, 150);
+            --box4color:rgb(7, 152, 152);
+            --box5color:rgba(0, 0, 0, 0.655);
+            --box5txcolor:white;
+        }
+        body{
+            background-color:var(--bodycolor) ;
+        }
+        .boxes{
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas:"nav nav nav"
+                                "side artical artical"
+                                "footer footer footer" ;
+            position: relative;
+        }
+        .box{
+            border: 2px solid black;
+            height: 55px;
+            /* width: 55px; */
+        }
+        .box1{
+            grid-area: nav;
+            background-color:var(--box1color) ;
+            
+        }
+        .box2{
+            grid-area: side;
+            background-color:var(--box2color) ;
+        }
+        .box3{
+            grid-area: artical;
+            background-color:var(--box3color) ;
+        }
+        .box4{
+            background-color:none ;
+            grid-area: nav;
+            text-align: end;
+            right: 30px;
+        }
+        .box5{
+            grid-area: footer;
+            background-color:var(--box5color) ;
+            color:var(--box5txcolor);
+        }
