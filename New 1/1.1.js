@@ -1,1 +1,0 @@
-alert("Hey Guys :)\n ~This Is a Image HTML Page ")

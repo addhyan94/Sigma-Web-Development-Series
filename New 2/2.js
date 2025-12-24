@@ -1,1 +1,0 @@
-alert("This Web page is Bookmark \n Fev Linkes Pages")
