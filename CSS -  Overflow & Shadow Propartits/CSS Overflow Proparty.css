@@ -1,0 +1,19 @@
+      .bx {
+            border: 2px solid;
+            border-radius: 10px;
+            width: 40vw;
+            height: 10vh;
+            margin: 20px;
+      }
+
+      .box {
+            border: 2px solid;
+            border-radius: 10px;
+            width: 40vw;
+            height: 40vh;
+            overflow: auto;
+            /* overflow: auto; */
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
+            margin: 30px;
+      }
