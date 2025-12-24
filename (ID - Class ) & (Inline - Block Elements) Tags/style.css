@@ -1,0 +1,18 @@
+p{
+    background-color: darkturquoise;
+}
+a{
+    background-color: rgb(144, 226, 12);
+}
+div{
+    background-color: rgb(139, 139, 251);
+}
+span{
+    background-color: rgb(222, 191, 111);
+}
+#p{
+    background: #cb4b4b;
+}
+#inline{
+    background: #ff92f2;
+}
