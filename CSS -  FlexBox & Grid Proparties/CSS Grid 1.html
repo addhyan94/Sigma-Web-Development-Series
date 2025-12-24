@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid </title>
+    <style>
+        body{
+            background-color: rgba(115, 245, 245, 0.833);
+        }
+        .boxes{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [fcolum]120px [scolum]100px [tcolum]200px;
+            grid-template-rows: [frow]100px [srow]100px [trow]100px;
+        }
+        .box{
+            border: 2px solid black;
+            height: 55px;
+            width: 55px;
+        }
+        .box1{
+            /* grid-row: 1/2; */
+            /* grid-column: fcolum/tcolum; */
+            /* Simmeler this Way  */
+            grid-row-start:1;
+            grid-column-end: 2;
+        }
+        .box3{
+            grid-row: 1/2;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+</body>
+</html>
