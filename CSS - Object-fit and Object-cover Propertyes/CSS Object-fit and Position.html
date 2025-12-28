@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Position</title>
+    <style>
+        .box {
+            height: 488px;
+            width: 488px;
+            border: 1.5px solid black;
+            /* background-color: aquamarine; */
+            background-image: url(kana\ ji.png);
+            background-position: top center;
+            background-repeat: repeat-x;
+
+        }
+
+        img {
+            height: 488px;
+            width: 488px;
+            /* object-fit: cover; */
+            object-fit: contain;
+            /* object-fit: fill; */
+            object-position: left;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- <img src="kana ji.png" alt="kana ji ki image"> -->
+    </div>
+</body>
+
+</html>
