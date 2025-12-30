@@ -1,0 +1,132 @@
+:root {
+    --nevcolor: rgba(46, 172, 50, 0.83);
+    --bt-firstcolor: rgba(39, 209, 44, 0.663);
+    --text-color: rgb(247, 247, 247);
+    --main-color: rgba(88, 207, 52, 0.841);
+    --hover-BGcolor: rgb(91, 138, 11);
+    --hover-text-color: whitesmoke;
+    --main2box-color: skyblue;
+    --foot-color: rgb(152, 195, 130);
+
+}
+
+body {
+    background-color: rgb(232, 229, 229);
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background-color: var(--nevcolor);
+    padding: 10px 10px;
+    position: sticky;
+    top: 10px;
+
+}
+
+button {
+    background-color: var(--bt-firstcolor);
+    padding: 3px 5px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px;
+    /* box-shadow: 0px 2px 16px 2px; */
+
+}
+
+button:hover {
+    background-color: var(--hover-BGcolor);
+    color: var(--hover-text-color);
+
+}
+
+ul {
+    justify-self: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    padding: 2px;
+    font-weight: bolder;
+    color: var(--text-color);
+
+}
+
+.mainbox {
+    background-color: var(--main-color);
+    /* display: flex; */
+    padding: 20px;
+    margin: 10px;
+    width: 96vw;
+    height: 99vmin auto;
+    /* justify-self: center; */
+    text-align: center;
+
+}
+
+.box1 {
+    background-color: var(--main2box-color);
+    /* margin: 60px; */
+    padding: 14px;
+    border: 1.5px solid black;
+    height: 609px;
+    width: 388px;
+    /* text-align: center; */
+    display: inline-block;
+    margin: 12px;
+
+}
+
+.box2 {
+    background-color: var(--main2box-color);
+    /* margin: 60px; */
+    padding: 14px;
+    border: 1.5px solid black;
+    height: 609px;
+    width: 388px;
+    /* text-align: center; */
+    display: inline-block;
+    margin: 12px;
+
+}
+
+.box3 {
+    background-color: var(--main-color);
+    border: 1.5px solid black;
+    border-radius: 20px;
+    margin: 8px;
+    padding: 5px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mylogo img {
+    height: 42px;
+    width: 42px;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 32px;
+    right: 20px;
+    border-radius: 80px;
+
+}
+
+.foot {
+    background-color: var(--foot-color);
+    padding: 5px;
+    height: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
