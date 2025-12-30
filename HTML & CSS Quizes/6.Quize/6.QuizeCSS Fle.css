@@ -1,0 +1,52 @@
+:root {
+    --firstcolor: rgba(0, 255, 255, 0.458);
+    --bt-firstcolor: rgba(110, 239, 239, 0.663);
+    --text-color: rgb(1, 58, 60);
+    --body-color: rgb(92, 186, 186);
+    --hover-BGcolor: rgb(15, 115, 118);
+    --hover-text-color: whitesmoke;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--firstcolor);
+    padding: 10px 100px;
+    border-radius: 30px;
+
+}
+
+button {
+    background-color: var(--bt-firstcolor);
+    padding: 3px 5px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px;
+    /* box-shadow: 0px 2px 16px 2px; */
+
+}
+
+button:hover {
+    background-color: var(--hover-BGcolor);
+    color: var(--hover-text-color);
+
+}
+
+ul {
+    justify-self: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    padding: 2px;
+    font-weight: bolder;
+    color: var(--text-color);
+
+}
