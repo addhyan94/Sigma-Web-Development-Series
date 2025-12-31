@@ -1,0 +1,53 @@
+<!-- Create a Jumping Boll  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumping Boll </title>
+ <style>
+    .boxes{
+        height: 50vh;
+        width: 100vw;
+        position: relative;
+        background-color: aquamarine;
+    }
+    .boll{
+        height: 110px;
+        width: 110px;
+        bottom: 0px;
+        left:0px;
+        background-color: black;
+        border-radius: 100%;
+        position: absolute;
+
+    animation: Slide 3s linear 1s infinite alternate , jump 1s ease-out 1s infinite alternate ;
+    }
+    
+    @keyframes Slide{
+        from{
+            left: 0%;
+        }
+        to{
+            left: 95%
+        }
+        
+    }
+    @keyframes jump{
+        from{
+            bottom: 0%;
+        }
+        to{
+            bottom: 40%
+        }
+        
+    }
+ </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="boll"></div>
+    </div>
+</body>
+</html>
