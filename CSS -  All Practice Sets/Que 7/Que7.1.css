@@ -1,0 +1,34 @@
+.box{
+    width: 125px;
+    height: auto;
+    background-color: whitesmoke;
+    border: 2px;
+    margin:15px;
+    padding: 9px;
+}
+.red{
+    height: 90px;
+    width: 90px;
+    border: 2px dotted black;
+    border-radius: 50%;
+    background-color: red;
+    margin:15px;
+}
+.yellow{
+    height: 90px;
+    width: 90px;
+    border: 2px dotted black;
+    border-radius: 50%;
+    background-color: yellow;
+    margin: 15px;
+    
+}
+.green{
+    height: 90px;
+    width: 90px;
+    border: 2px dotted black;
+    border-radius: 50%;
+    background-color: green;
+    margin: 15px;
+
+}
