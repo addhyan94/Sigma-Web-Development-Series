@@ -1,0 +1,33 @@
+body{
+    background-color: gray;
+}
+
+nav{
+    border: 2px solid white;
+    height: 60px;
+    background-color: #0f1111;
+}
+.amazon a{
+    font-size: 25px;
+    color:rgba(207, 97, 56, 0.888);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 200px;
+    text-align: center;
+    
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.scbox{
+    button{
+        background-color: #e99f3fe4;
+        color: white;
+    }
+}
