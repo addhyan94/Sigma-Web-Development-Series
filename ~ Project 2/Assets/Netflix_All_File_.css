@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+
+/* Main Css Code .............................................................................................. */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Img/Background\ Image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1700px, 100vw);
+    height: 70vh;
+    position: relative;
+
+}
+
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0%;
+    background-color: black;
+
+}
+
+nav {
+
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav button {
+    position: relative;
+    z-index: 5;
+
+}
+
+nav div> :nth-child(1) {
+    font-weight: 400;
+    padding: 2% 11px;
+    border-color: rgba(255, 255, 255, 0.353);
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+nav div> :nth-child(2) {
+    background-color: rgba(255, 0, 0, 0.611);
+    padding: 2px 10px;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+
+nav .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .btn:hover {
+    transition: all 1s cubic-bezier(1, 1.56, 0.35, 0.72);
+    box-shadow: 0px 0px 8px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.353);
+}
+
+nav img {
+    position: relative;
+    z-index: 5;
+    width: 110px;
+}
+
+.text {
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    /* height: 80%; */
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    gap: 23px;
+    padding: 0 20px;
+
+}
+
+.text> :nth-child(1) {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.text> :nth-child(2) {
+    
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.text> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.text button {
+    background-color: rgba(255, 0, 0, 0.756);
+    color: white;
+    padding: 3px 20px;
+    font-size: 19px;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.text a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.text button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.485);
+    transition: all 1s cubic-bezier(1, 1.56, 0.35, 0.72);
+    box-shadow: 0px 0px 8px 0px;
+}
+
+.text input {
+    color: rgb(255 255 255 / 69%);
+    padding: 4px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    background-color: rgba(23, 23, 23, 0.6);
+    border-color: rgba(188, 184, 184, 0.6);
+    width: 275px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+.line {
+    height: 7px;
+    background-color: rgba(91, 89, 89, 0.682);
+}
+
+.first {
+
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1111px) {
+    nav{
+        max-width: 90vw;
+        justify-content: space-between;
+    }
+    .first {
+
+        flex-wrap: wrap;
+    }
+
+    text> :nth-child(1) {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+    .text> :nth-child(3) {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+}
+
+
+.sec-img {
+    position: relative;
+    padding: 0px;
+    /* overflow: hidden; */
+}
+
+.sec-img video {
+    position: absolute;
+    top: 93px;
+    right: 71px;
+    width: 307px;
+}
+
+.sec-img img {
+    margin-top: 8px;
+    width: 441px;
+    position: relative;
+    z-index: 10;
+    padding: 0px;
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    padding: 18px 0px;
+}
+
+.first>div :nth-child(2) {
+    font-size: 23px;
+    font-weight: 300;
+    padding: 5px 0px;
+    padding-bottom: 21px;
+}
+
+.second>div :nth-child(1) {
+    font-size: 40px;
+}
+
+.fourth>div :nth-child(1) {
+    font-size: 38px;
+
+}
+
+.feq-Section h2 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 42px;
+}
+
+.feq-box {
+
+    transition: all;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    background-color: #1d1d1d;
+    padding: 23px;
+    margin: 12px auto;
+    cursor: pointer;
+}
+
+.feq-box:hover {
+    transition: all 0.9s ease-out;
+    background-color: #474747
+}
+
+.feq-box svg {
+    filter: invert(1);
+}
+
+.down-btn div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.down-btn p {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 505;
+}
+
+.down-btn button {
+    background-color: rgba(255, 0, 0, 0.756);
+    color: white;
+    padding: 3px 20px;
+    font-size: 19px;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.down-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.down-btn button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.485);
+    transition: all 1s cubic-bezier(1, 1.56, 0.35, 0.72);
+    box-shadow: 0px 0px 8px 0px;
+}
+
+.down-btn input {
+    color: rgb(255 255 255 / 69%);
+    padding: 4px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    background-color: rgba(23, 23, 23, 0.6);
+    border-color: rgba(188, 184, 184, 0.6);
+    width: 275px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+    padding-top: 16px;
+}
+
+footer .number {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    /* padding-left: 135px; */
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.f-links {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width: 500px) {
+    .text button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+   nav img {
+    
+    width: 90px;
+}
+   
+    .sec-img video {
+        top: 60px;
+        right: 16px;
+        width: 247px;
+    }
+
+    .sec-img img {
+        width: 305px;
+    }
+}
+
+@media screen and (max-width: 1111px) {
+   .feq-Section h2 {
+
+    font-size: 32px;
+}
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 23px;
+        margin-top: 15px;
+        max-width: 90vw;
+    }
+}
+
+
+
+/* 404 page Css Code  .................................................................................................*/
+
+.body {
+    background: #fff
+}
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Arvo', serif;
+}
+
+.page_404 img {
+
+    width: 100%;
+}
+
+.four_zero_four_bg {
+
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+}
+
+
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+.link_404 {
+    color: #fff !important;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.contant_box_404 {
+    margin-top: -50px;
+}
