@@ -29,3 +29,49 @@
     margin: 20px 0;
     display: inline-block;}
 .contant_box_404{ margin-top:-50px;}
+
+
+@media (max-width: 600px){
+
+    .page_404{
+        padding: 25px 10px;
+        background: #fff;
+    }
+
+    .four_zero_four_bg{
+        height: 260px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .four_zero_four_bg h1{
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .four_zero_four_bg h3{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .contant_box_404{
+        margin-top: -20px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .contant_box_404 h3{
+        font-size: 22px;
+    }
+
+    .contant_box_404 p{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .link_404{
+        padding: 10px 18px;
+        font-size: 14px;
+        border-radius: 25px;
+    }
+}
