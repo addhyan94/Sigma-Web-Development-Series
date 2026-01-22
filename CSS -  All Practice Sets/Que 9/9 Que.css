@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+/* header area ................................................ */
+
+nav {
+    height: 60px;
+    background-color: #0f1111;
+}
+
+.amazon a {
+    font-size: 25px;
+    color: rgba(207, 97, 56, 0.888);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 200px;
+    text-align: center;
+
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.scbox {
+    button {
+        background-color: #e99f3fe4;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/* Main contain Area ......................................................... */
+
+.content {
+    margin-left: 15px;
+    margin-top: 15px;
+
+    height: 80vh;
+    width: 98%;
+    background-color: gray;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 200px;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    background-color: rgba(250, 235, 215, 0.138);
+}
+
+.box2 {
+    background-color: rgba(250, 235, 215, 0.536);
+
+}
+
+.box3 {
+    background-color: rgba(250, 235, 215, 0.774);
+
+}
+
+/* footer area ...................................................... */
+
+.footer {
+    margin-top: 5px;
+    border: 2px solid black;
+    height: 90px;
+    align-content: center;
+    text-align: center;
+    background-color: #0f1111;
+    color: white;
+}
