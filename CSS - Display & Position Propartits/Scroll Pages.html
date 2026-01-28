@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        header{
+            position:fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+            background-color: aliceblue;
+            margin:0px;
+            padding: 0px;
+        }
+        header a{
+            text-decoration: none;
+            color: black;
+            font-size: larger;
+            margin: 20px;
+        }
+
+        .panel{
+            margin: 6px;
+            height: 100vh;
+            border: 2px solid black ;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Skils">Skils</a>
+            <a href="#Concet">Conceat</a>
+        </nav>
+    </header>
+    <section id="Home" class="panel">Home</section>
+    <section id="About" class="panel" style="background-color: rgb(236, 236, 156);">About</section>
+    <section id="Skils" class="panel">Skils</section>
+    <section id="Concet" class="panel" style="background-color: rgb(236, 236, 156);">Concet</section>
+</body>
+</html>
