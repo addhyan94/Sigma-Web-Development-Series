@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting by Ids, Classes, and More</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 120px;
+            margin: 20px;
+            padding: 20px;
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">First (1) </div>
+    <div class="box">I'm A JS Program <br>Second (2)</div>
+    <div id="Box3" class="box">Lean Selecting By IDs <br>Third (3) </div>
+    <div class="box">Fourth (4) </div>
+    <script>
+        console.log("Hello JS IS start");
+        // Yaha per JS ki help se ek Class lo uthake uski CSS change ki But jo index utahaya hai gar bo index per koi or aa gaya to bo change ho jayega . 
+        /*let boxes = document.getElementsByClassName("box");
+        console.log(boxes);
+        boxes[2].style.backgroundColor="lightgreen";*/
+
+        // Yaha aapam Ab Id se target karenge elements ko Uper Class ki kiya tha aab Id se karenge jisse . jis Element ko change karna hai boi hoga koi add ho ya delete change ni hoga bo 
+        document.getElementById("Box3").style.backgroundColor="lightblue";
+
+        // Yaha aapan aab Quaryselector use kr rahe hai jab isko use karte hai toClass ki help se use karte hai or ye serf class ka first element leta hai or kouch bbhi ni 
+        document.querySelector(".box").style.backgroundColor = "aqua";
+
+        // Agar sabko select karna hai Quaryselector se to isme all laga dete hai but ye fer direct ni chalta hai fer isko chalane ke liye Loops ka use karna parta hai Kisi bhi loop se chala sakte hai 
+        console.log(document.querySelectorAll(".box")) // Print kareke batayaga ki isme konkonse elements aaye hai 
+
+        // Ek ek karke sare elements ko color kardeta hai Or ime For each loop ka use kiya gaya hai ...
+        document.querySelectorAll(".box").forEach(e =>{
+            e.style.backgroundColor="aqua";
+        })
+
+        //  Ye Jo tagname hota hai un sab same names bale ko utha leta hai or usme changements kar deta hai 
+        console.log(document.getElementsByTagName("div"))// Ye sare div ko print kar dena or isme jo perent hai bo bhji aayega or jo child ahi bo bhi 
+
+
+        // mactches ye karta hai ki agar jo element aapan ne Select kiya hai usme CSS lagi hai to true return karega barna false . Ye serf CSS ko march karta hai or kuch ni .
+        let a = document.getElementsByTagName("div");
+        // agar ye sahi hoga to True return karega barna false
+        a[2].matches("#Box3");// aapne case me ye cheez True hai 
+        a[3].matches("#Box3");// Ye cheez false 
+
+        // Ye aapne closest element ko match karta hai or bo dedeta hai agar isko aapne pass ni milta totye aapne parents ke pass jayega ni mila to parent ke parent ke pass ...end so on.. or jab mil jayega to return kar dega or ni mila to NULL return kar dega bus.
+
+        a[2].closest("html");// aapne case me ye html ko return karega 
+
+        // ye .. agar koi value kisi cheez ke aander hai to ye true return karna hai barna ni .. jese BOXES ke aander BOX hai to true aayega or agar ni hai to false dega ....
+
+        
+    </script>
+</body>
+
+</html>
