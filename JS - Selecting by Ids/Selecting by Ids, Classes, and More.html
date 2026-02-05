@@ -31,7 +31,7 @@
         boxes[2].style.backgroundColor="lightgreen";*/
 
         // Yaha aapam Ab Id se target karenge elements ko Uper Class ki kiya tha aab Id se karenge jisse . jis Element ko change karna hai boi hoga koi add ho ya delete change ni hoga bo 
-        document.getElementById("Box3").style.backgroundColor="lightblue";
+        document.getElementById("Box3").style.backgroundColor = "lightblue";
 
         // Yaha aapan aab Quaryselector use kr rahe hai jab isko use karte hai toClass ki help se use karte hai or ye serf class ka first element leta hai or kouch bbhi ni 
         document.querySelector(".box").style.backgroundColor = "aqua";
@@ -40,8 +40,8 @@
         console.log(document.querySelectorAll(".box")) // Print kareke batayaga ki isme konkonse elements aaye hai 
 
         // Ek ek karke sare elements ko color kardeta hai Or ime For each loop ka use kiya gaya hai ...
-        document.querySelectorAll(".box").forEach(e =>{
-            e.style.backgroundColor="aqua";
+        document.querySelectorAll(".box").forEach(e => {
+            e.style.backgroundColor = "aqua";
         })
 
         //  Ye Jo tagname hota hai un sab same names bale ko utha leta hai or usme changements kar deta hai 
@@ -60,7 +60,11 @@
 
         // ye .. agar koi value kisi cheez ke aander hai to ye true return karna hai barna ni .. jese BOXES ke aander BOX hai to true aayega or agar ni hai to false dega ....
 
+        document.querySelector("body").contains(a[2]); // body ke aander a[2] hai isliye ye true return kar raha hai 
+        document.querySelector("body").contains(a[6]);// body ke aander a[6] ni hai isliye ey false return kr raha hai 
+
         
+
     </script>
 </body>
 
