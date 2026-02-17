@@ -98,6 +98,15 @@ To practice building complex website structures and improve design accuracy.
   <a href="https://github.com/addhyan94">
     <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github">
   </a>
+  <!-- <a href="https://addhyan94.github.io/My-Portfolio-Website/My-Portfolio.html">
+    <img src="https://img.shields.io/badge/Live-Portfolio-00C9A7?style=for-the-badge&logo=google-chrome&logoColor=white">
+  </a> -->
+  <a href="https://addhyan94.github.io/My-Portfolio-Website/My-Portfolio.html">
+  <img src="https://img.shields.io/badge/View-My%20Portfolio-ff6b6b?style=for-the-badge&logo=vercel&logoColor=white">
+</a>
+
+</p>
+
 </p>
 
 ---
