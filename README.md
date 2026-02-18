@@ -5,7 +5,6 @@
 </p>
 
 <p align="center">
-  <!-- <img src="https://img.shields.io/badge/LEVEL-UP-3D%20Learning-blueviolet?style=for-the-badge&logo=appveyor" /> -->
   <img src="https://img.shields.io/badge/STATUS-Active%20Learning-success?style=for-the-badge" />
   <img src="https://img.shields.io/badge/FOCUS-Frontend%20Development-orange?style=for-the-badge" />
 </p>
@@ -30,7 +29,8 @@ I believe in learning by building real projects instead of just watching tutoria
 
 - HTML5  
 - CSS3  
-- JavaScript  
+- JavaScript
+- VS Code Editor
 - Git & GitHub  
 
 ---
