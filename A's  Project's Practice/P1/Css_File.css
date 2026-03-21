@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.upft{
+    background-color: rgb(26, 127, 235);
+    color: white;
+    text-align: center;
+    height: 26px;
+}
+body{
+background-color: aliceblue;
+}
+.firstinto{
+background-color: #fff;
+margin: 10px;
+padding: 10px;
+}
+.txts h3{
+    padding: 5px;
+}
+.txts p{
+    padding-bottom:8px ;
+}
+.secondinto{
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+
+}
+.list{
+    padding-left: 35px;
+}
+.dnft{
+    position:absolute ;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(26, 127, 235);
+    height: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+    font-size: 12px;
+}
