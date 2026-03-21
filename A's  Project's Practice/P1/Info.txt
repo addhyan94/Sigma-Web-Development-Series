@@ -1,0 +1,7 @@
+1. A Tribute Page
+A tribute page is a simple beginner project where you create a webpage about a person you admire using basic HTML for structure and a little CSS for styling and layout.
+
+. Use HTML elements like headings, paragraphs, lists, links, and images to structure the content clearly.
+. Place the image and name at the top, followed by a clean layout for details such as life, achievements, or qualities.
+. Apply basic CSS for background color, fonts, spacing, and alignment to improve visual appeal.
+. Keep the design simple and readable while practicing proper layout and styling techniques.
