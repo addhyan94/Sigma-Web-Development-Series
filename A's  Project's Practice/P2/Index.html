@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Css_File.css" />
+  </head>
+  <body>
+    <main class="mainbdy">
+      <div class="mainbox">
+        <form action="post" method="post">
+          <label for="name"><h3>Name</h3></label>
+          <div class="name sec">
+            <input
+              type="text"
+              class="int"
+              id="name"
+              placeholder="Enter Your Name "
+              required
+            />
+          </div>
+          <label for="Email"><h3>Email</h3></label>
+          <div class="email sec">
+            <input
+              type="email"
+              id="Email"
+              class="int"
+              placeholder="Enter Your email "
+              required
+            />
+          </div>
+          <label for="Age"><h3>Age</h3>
+          </label>
+          <div class="age sec">
+            <input
+              type="number"
+              class="int"
+              name="age"
+              id="Age"
+              required
+              placeholder="Enter your age"
+            />
+          </div>
+          <label for="describes"><h3>Which option best describes you?</h3> </label>
+          <div class="describes sec">
+            <select name="select" id="describes" class="int" required>
+              <option value="select">Select</option>
+              <option value="select">Students</option>
+              <option value="select">Freelancer</option>
+              <option value="select">Other</option>
+            </select>
+          </div>
+          <label for="friend"><h3>Would you recommend Github to a Friend?</h3> </label>
+          <div class="friends sec">
+            <div>
+              <input type="radio" required name="friend" id="yes" />
+              <label for="yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" required name="friend" id="no" />
+              <label for="no">No</label>
+            </div>
+            <div>
+              <input type="radio" required name="friend" id="maybe" />
+              <label for="maybe">Maybe</label>
+            </div>
+          </div>
+          <label for="language" required
+            ><h3>Language and Frameworks known</h3>(Check all that apply)</label
+          >
+          <div class="language sec">
+            <div>
+              <input type="checkbox" name="c" id="language" />
+              <label for="c">C</label>
+            </div>
+            <div>
+              <input type="checkbox" name="c++" id="language" />
+              <label for="c++">C++</label>
+            </div>
+            <div>
+              <input type="checkbox" name="c#" id="language" />
+              <label for="c#">C#</label>
+            </div>
+            <div>
+              <input type="checkbox" name="java" id="language" />
+              <label for="java">Java</label>
+            </div>
+            <div>
+              <input type="checkbox" name="python" id="language" />
+              <label for="python">Python</label>
+            </div>
+            <div>
+              <input type="checkbox" name="js" id="language" />
+              <label for="js">JavaScript</label>
+            </div>
+            <div>
+              <input type="checkbox" name="react" id="language" />
+              <label for="react">React</label>
+            </div>
+            <div>
+              <input type="checkbox" name="angular" id="language" />
+              <label for="angular">Angular</label>
+            </div>
+            <div>
+              <input type="checkbox" name="django" id="language" />
+              <label for="django">Django</label>
+            </div>
+            <div>
+              <input type="checkbox" name="spring" id="language" />
+              <label for="c">Spring</label>
+            </div>
+          </div>
+          <label for="cs"><h3>Any comments or Suggestions</h3> </label>
+          <div class="comments sec">
+            <textarea
+              name="comment"
+              required
+              id="cs"
+              placeholder="Enter your comment hear"
+              class="intt"
+            ></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
