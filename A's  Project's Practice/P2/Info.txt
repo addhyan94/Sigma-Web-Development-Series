@@ -1,0 +1,7 @@
+2. Webpage Including Form
+Forms are a core part of most applications, and practicing form creation early helps you understand HTML inputs, structure, and basic styling effectively.
+
+. Forms are essential in most web projects and are widely used in real-world applications, making early practice important to test and strengthen HTML knowledge.
+. They include multiple input elements such as text fields, checkboxes, radio buttons, date inputs, and other common controls within a single form.
+. HTML / HTML5 knowledge is sufficient
+. Working with forms helps in understanding proper webpage structure, while basic CSS improves appearance and external resources support learning.
