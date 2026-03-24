@@ -1,0 +1,9 @@
+3. Design a Parallax Webpage using HTML and CSS
+A parallax website includes fixed images in the background that are kept in place and the user can scroll down the page to see different parts of the image. In this article, we are creating a parallax webpage using HTML and CSS. We will use basic tags of HTML like div, paragraph, and heading to write our content and will use CSS to align and beautify our basic HTML design.
+Basically, the Scrolling effect is where background images move at a different speed than the foreground images.
+
+Approach:
+. We have used a container element and added a background image to the container. Then we used the background-attachment: fixed to create the actual parallax effect.
+. For each HTML section, we have given a class so that it can be targeted in the CSS.
+. In the HTML page, we have divisions and in each division, there is a header and a small paragraph.
+. In the CSS file, we decorated our text and placed the head in a fixed position.
