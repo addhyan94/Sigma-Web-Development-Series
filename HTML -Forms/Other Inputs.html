@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Inputs Type</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="...." method="post">
+        <!-- Big text area -->
+        <label for=""> Big text area hai kuxh bhi likh sakte ho </label>
+        <textarea rows="5" cols="40" placeholder="Apni baat likho..."></textarea>
+        
+        <!-- File upload -->
+        <label for=""> File uploda kr sakte ho </label>
+        <input type="file">
+        
+        <!-- Multiple files -->
+        <label for=""> media file uploda kr sakte ho </label>
+        <input type="file" multiple>
+        
+        <!-- Color picker -->
+        <label for=""> Color pick kr sakte ho </label>
+        <input type="color" value="#ff0000">
+        
+        <!-- Range slider -->
+        <label for=""> Range slider hai koi bhi range select kr lo </label>
+        <input type="range" min="0" max="100" value="50">
+        
+        <!-- Hidden field — user ko nahi dikhta -->
+        <label for=""> yaha ek hidden field hai use ko ni dikhega  </label>
+        <input type="hidden" name="userId" value="123">
+    </form>
+</body>
+
+</html>
