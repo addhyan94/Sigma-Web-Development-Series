@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation Form</title>
+    <style>
+        #registerForm{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <form id="registerForm">
+  
+  <!-- Name -->
+  <label for="name">Poora Naam:</label>
+  <input type="text" id="name" name="name" 
+         placeholder="Apna naam likho" required>
+
+  <!-- Email -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" 
+         placeholder="email@example.com" required>
+
+  <!-- Password -->
+  <label for="pass">Password:</label>
+  <input type="password" id="pass" name="password" 
+         minlength="6" required>
+
+  <!-- Gender -->
+  <label>Gender:</label>
+  <div>
+  <input type="radio" name="gender" value="male" id="male">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" value="female" id="female">
+  <label for="female">Female</label>
+  </div>
+
+  <!-- City -->
+   <div>
+  <label for="city">Sheher:</label>
+  <select id="city" name="city">
+    <option value="">-- Chuno --</option>
+    <option value="lucknow">Lucknow</option>
+    <option value="delhi">Delhi</option>
+    <option value="mumbai">Mumbai</option>
+  </select>
+</div>
+  <!-- Hobbies -->
+  <label>Hobbies:</label>
+  <div>
+  <input type="checkbox" id="cricket" name="hobbies" value="cricket">
+  <label for="cricket">Cricket</label>
+  <input type="checkbox" id="coding" name="hobbies" value="coding">
+  <label for="coding">Coding</label>
+  </div>
+
+  <!-- About -->
+  <label for="about">Apne baare mein:</label>
+  <textarea id="about" name="about" rows="4" 
+            placeholder="Kuch likho apne baare mein..."></textarea>
+
+  <!-- Submit -->
+
+ <div> <button type="submit">Register Karo 🚀</button></div>
+  <div><button type="reset">Reset Karo</button></div>
+
+</form>
+<script>
+    const form = document.getElementById("registerForm");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // Page reload rokta hai!
+
+  // Individual values lena
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const city = document.getElementById("city").value;
+
+  console.log(name);  // "Rahul"
+  console.log(email); // "rahul@gmail.com"
+
+  // Checkbox checked hai ya nahi
+  const cricket = document.getElementById("cricket").checked;
+  console.log(cricket); // true ya false
+
+  // Radio value lena
+  const gender = document.querySelector('input[name="gender"]:checked').value;
+  console.log(gender); // "male" ya "female"
+});
+</script>
+</body>
+</html>
