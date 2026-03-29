@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Inputs Type</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <form action="...." method="post">
+        <!-- Normal text -->
+         <label for="text">Naam Likh do aapna : </label>
+         <input type="text" id="text" placeholder="Naam likho">
+         
+         <!-- Password — dots dikhta hai -->
+         <label for="passwprd">Password Likh do aapna : </label>
+         <input type="password" id="passwprd" placeholder="Password">
+         
+         <!-- Email — validation automatic -->
+         <label for="Mail">Emaol Likh do aapna : </label>
+         <input type="email" id="Mail" placeholder="Email likho">
+         
+         <!-- Number only -->
+         <label for="num">Number Likh do aapna : </label>
+         <input type="number" id="num" min="1" max="100" placeholder="Number 1 se 100 (isse jada ni jayega)">
+         
+         <!-- Phone number -->
+         <label for="pnum">Phone Number Likh do aapna : </label>
+         <input type="tel" id="pnum" placeholder="Phone number">
+         
+         <!-- Search box -->
+         <label for="search">Search kr lo : </label>
+         <input type="search" id="search" placeholder="Search karo">
+         
+         <!-- URL -->
+         <label for="url">Url Likh do aapna : </label>
+         <input type="url" id="url" placeholder="Website URL">
+        </form>
+</body>
+</html>
