@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Inputs Type</title>
+    <style>
+        form {
+            margin: 5px;
+            /* display: flex;
+            flex-direction: column; */
+        }
+    </style>
+</head>
+
+<body>
+    <form action="...." method="post">
+        <!-- Checkbox — multiple select kar sakte ho -->
+         <label for="">Checkbox tick kr lo</label>
+         <div class="checkbox">
+        <input type="checkbox" id="cricket">
+        <label for="cricket">Cricket</label>
+
+        <input type="checkbox" id="football">
+        <label for="football">Football</label>
+</div>
+        <!-- Radio — sirf ek select kar sakte ho -->
+         <label for="">Radio hai ek select kr lo</label>
+         <div class="radio">
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+</div>
+        <!-- Dropdown -->
+         <label for="">Dropdown selection hai ek select kr lo</label>
+         <div class="dropdown">
+        <select>
+            <option value="">-- Chuno --</option>
+            <option value="up">Uttar Pradesh</option>
+            <option value="mp">Madhya Pradesh</option>
+            <option value="delhi">Delhi</option>
+        </select>
+        </div>
+    </form>
+</body>
+
+</html>
