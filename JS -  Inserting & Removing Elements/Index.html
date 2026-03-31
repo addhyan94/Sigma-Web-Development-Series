@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting & Removing Elements Using Js</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_box contioner red boxes">
+        <div class="box">Hello Students ..</div>
+        <div class="box2 color" style="color: aqua;">hello Second Student ..</div>
+        <div class="box3" data-createdby="Tiwari-Ji"></div>
+    </div>
+    <script>
+    //     let div = document.createElement("div");
+    //     div.innerHTML ="I me <b> Js Created div"
+    //     div.setAttribute("style", "color:red", "created");
+    //    // document.querySelector(".main_box").append(div);// append se us main_box ke sabse last me insert karega is div ko ..
+    //   //  document.querySelector(".main_box").before(div);// before se us main_box ke sabse pahle me insert karega is div ko matlab main_box ki class ke pahle ye div aayega ..
+    // //   document.querySelector(".main_box").after(div);// after se us main_box ke bd he insert kr dega is div ko ...
+    //   document.querySelector(".main_box").prepend(div);// prepend se us main_box ke bd he insert kr dega is div ko ...
+
+   // let main = document.querySelector(".main_box");
+    //main.insertAdjacentHTML("afterbegin", ("Hello i'm a text from js using AdjacentHTML tag... "));
+    //☝️ ye cheez same bese he hai jese aapan ne uper kiya tha append lagake but isme kya hai ki ek he line likhkr aapan boi kaam kara sakte hai  .. afterbegin se us main-box class ke just bd mtb class ke aander sabsse phale lag jayega 0... 
+
+    // let main = document.querySelector(".main_box");
+   // main.insertAdjacentHTML("afterend", ("Hello i'm a text from js using AdjacentHTML tag... "));
+        //☝️ ye text ,e afterend laga hai to iska mtb hai ki ye text class ke bd lagega class ke aander ni .....
+
+    // let main = document.querySelector(".main_box");
+    // main.insertAdjacentHTML("beforebegin", ("Hello i'm a text from js using AdjacentHTML tag... "));
+    // ye text class ke pahle lag jayegi .. class ke aander ni 
+
+    let main = document.querySelector(".main_box");
+    main.insertAdjacentHTML("beforeend", ("Hello i'm a text from js using AdjacentHTML tag... "));
+    //ye text me beforeend laga hai to iska matlab hai ki ye text class ke aander but last me lag jayega .... 
+    
+    </script>
+</body>
+</html>
