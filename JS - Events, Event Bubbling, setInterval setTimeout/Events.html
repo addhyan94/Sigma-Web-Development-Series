@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .body{
+            height: 100%;
+            width: 100%;
+            background-color: beige;
+        }
+        .btnbox{
+                display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+        }
+        #btn{
+                display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    width: 226px;
+    height: 49px;
+    border-radius: 30px;
+        }
+        #btn:hover{
+            color: white;
+            background: conic-gradient(red, blue, green);
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="ma">
+        <div class="box" style="color:red;"><h1><b>Hey i'm a simple box</b></h1></div>
+    </div>
+    <div class="list">
+        <ol>
+            <li><b>single click karoge </b>to raj bala msg milega</li>
+            <li>Or Agar <b>continue clickk karte rahoge</b> to aapka click count hoga ki aapne kitni br button dabaya hai ..</li>
+            <li>Or Agar <b>Aap Right Click </b>Karoge to aapko ek Alert msg aayega Check kr lo ek br karke :.｡. o(≧▽≦)o .｡.:</li>
+            <li>Chalo aab aapne right click kar diya to  </li>
+                <li><b>Inspect per jaye or fer console per </b>Yha ajake ek br dutton per ya hai bhi click karo or keyboard se koi bhi key press karo aapki key aapko baha dikahgi ....:.｡. o(≧▽≦)o .｡.:</li>
+        </ol>
+    </div>
+    <div class="btnbox"><button id="btn">Click Me</button></div>
+    <script>
+
+        // yaha ye ho raha hai ki single click karne per jo text likha hai bo change ho jayega 
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+            document.querySelector(".box").innerHTML = "<h1><b>Aaj ka raj bala msg hai ki aapan ne button click karna seekh liya hai </b></h1>"
+            var box = document.querySelector(".box");
+            box.style.color="rgb(33, 119, 119)";
+        })
+        
+        // yaha ye ho rha hai ki jab koi click bale buton per right click karega to ek alert msg aayega ... ye kaam contextmenu hota hai iska matb bo aapan right click karke inspect bagera me jate hai usko target karta hai or fer aapko alert msg deta hai ...
+        // btn.addEventListener("contextmenu",()=>{
+        document.addEventListener("contextmenu",()=>{// uper button per right click karne per aa rha atha alert msg but aab document per laga diya iska matlab aab kahi bhi right click karo to aayega alert msg..
+             alert("Plss Isko Inspect Mt karoooooooooo ............")
+         })
+         
+         // isme ye ho raha hai ki double click karne per ek alert msg aayega 
+         /* btn.addEventListener("dblclick",()=>{
+            document.getElementsByClassName(".box");
+            alert("Haa aapne Button ko Duble click kr diya hai Comfirm ho gaya hai... ",)
+         })*/
+
+    // uper btn se ye chal ni rha tha isliye wapis se button ko leliya hai or is br button ki class ko ni seedhe button ko he utha liya hai 
+        const button = document.querySelector("button");
+        button.addEventListener("click", (event) => {
+            button.textContent = `Click count: ${event.detail}`;
+        });
+    // isme kaam kya ho rha .. ( jese he koi button per click karega to bo bo button count karega ki kitni br aapne click kiya hai continue ...)
+
+    // Keyboard event bhi hota hai ....................
+    
+    document.addEventListener("keydown",(event)=>{// uper button per right click karne per aa rha atha alert msg but aab document per laga diya iska matlab aab kahi bhi right click karo to aayega alert msg..
+         console.log(event);
+         console.log("<b>Plss Faltu me key mt dawaooooooo</b>")
+     })
+     
+    </script>
+</body>
+
+</html>
