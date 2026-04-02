@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubling Codes</title>
+     <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: beige;
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .container {
+            background-color: rgb(227, 227, 28);
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+    <script>
+        // kya hota hai ki container ke aander 2 cheze or hai 
+        // ese samjho ki child ek aander bala room hai or tume child bale room me jana hai to sabse pahle tume container bale room me jana parega or fer childcontainer bale me fer uke bd child me 
+        //  to child per click kiya to tum sab room me gaye or child ko utha liya but active to sare room hue hai ma isi ko bolte hai Element bulling
+        // isko rokk ne ke liye stoppropagation ka use karte hai isse ye hoga ki sare room tk ke liye ke direct brodge ban jayega isme sare events active ni honge jisper jaoge boi active hoga .. isme event Bulling ni hogi 
+        
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("Child Was clicked")
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("childContainer Was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("container Was clicked")
+        })
+
+    </script>
+</body>
+</html>
