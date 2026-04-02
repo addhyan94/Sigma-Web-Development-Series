@@ -1,0 +1,205 @@
+🖱️ Mouse Events
+Event_______________________________________________Kab hota hai
+-------------------------------------------------------------------------------
+click                                             Element pe click kiya
+-------------------------------------------------------------------------------
+dblclick                                            Double click kiya
+-------------------------------------------------------------------------------
+mousedown                                          Mouse button dabaya
+-------------------------------------------------------------------------------
+mouseup                                             Mouse button choda
+-------------------------------------------------------------------------------
+mouseover                                           Mouse element pe aaya
+-------------------------------------------------------------------------------
+mouseout                                            Mouse element se gaya
+-------------------------------------------------------------------------------
+mousemove                                            Mouse hil raha hai
+-------------------------------------------------------------------------------
+contextmenu                                            Right click kiya
+============================================================================================
+
+⌨️ Keyboard Events
+Event_______________________________________________Kab hota hai
+-------------------------------------------------------------------------------
+keydown                                               Key dabi
+-------------------------------------------------------------------------------
+keyup                                                 Key chodi
+-------------------------------------------------------------------------------
+keypress                                        Key dabi (old, avoid karo)
+============================================================================================
+
+📝 Form Events
+Event_______________________________________________Kab hota hai
+-------------------------------------------------------------------------------
+submit                                             Form submit hua
+-------------------------------------------------------------------------------
+change                                               Value change hui
+-------------------------------------------------------------------------------
+input                                               Kuch type kiya
+-------------------------------------------------------------------------------
+focus                                               Input pe click kiya
+-------------------------------------------------------------------------------
+blur                                               Input se bahar gaye
+-------------------------------------------------------------------------------
+reset                                               Form reset hua
+============================================================================================
+
+🪟 Window Events
+Event_______________________________________________Kab hota hai
+-------------------------------------------------------------------------------
+load                                               Page load hua
+-------------------------------------------------------------------------------
+resize                                               Window resize hui
+-------------------------------------------------------------------------------
+scroll                                               Page scroll hua
+-------------------------------------------------------------------------------
+unload                                               Page band hua
+============================================================================================
+
+📱 Touch Events (Mobile only)
+Event_______________________________________________Kab hota hai
+-------------------------------------------------------------------------------
+touchstart                                               Finger touch ki
+-------------------------------------------------------------------------------
+touchend                                               Finger uthhai
+-------------------------------------------------------------------------------
+touchmove                                               Finger slide ki
+============================================================================================
+
+Top 8 Events:Yaad Kr looooo ::::::::::::::::::::::::::::::::::::::::::::::::::
+Event_______________________________________________Use
+-------------------------------------------------------------------------------
+click                                               Button, links
+-------------------------------------------------------------------------------
+input                                               Live typing
+-------------------------------------------------------------------------------
+submit                                               Form handle karna
+-------------------------------------------------------------------------------
+keydown                                              Keyboard shortcuts 
+-------------------------------------------------------------------------------
+keydown                                              Keyboard shortcuts
+-------------------------------------------------------------------------------
+scroll                                                 Sticky navbar
+-------------------------------------------------------------------------------
+focus/blur                                             Input styling
+-------------------------------------------------------------------------------
+load                                                  Page ready hone pe
+-------------------------------------------------------------------------------
+
+
+How to use Most Common Events:
+--------------------------------
+
+ 1. click — Sabse common(simple click per active)
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", () => {
+  alert("Button click hua! 🔥");
+});
+_____________________________________________________________________________________
+
+ 2. input — Live typing pakdo...
+
+const input = document.querySelector("#search");
+input.addEventListener("input", (e) => {
+  console.log(e.target.value); // jo type ho raha hai live
+});
+// e.target.value = input mein jo likha hai wo milta hai adject words...
+_____________________________________________________________________________________
+
+ 3. submit — Form submit rokna...
+const form = document.querySelector("#myForm");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // ← Page reload rokta hai! Bahut important!
+  console.log("Form submit hua!");
+});
+//e.preventDefault() — ye likhna mat bhoolna submit pe ⚠️ kuki ye reload ni hone denga form jab tk bhar na jaye ..
+_____________________________________________________________________________________
+
+ 4. keydown — Keyboard key pakdo konsi key press ki bo
+document.addEventListener("keydown", (e) => {
+  console.log(e.key);     // "Enter", "a", "Escape" etc.
+  console.log(e.keyCode); // 13, 65, 27 etc.
+  if (e.key === "Enter") {
+    console.log("Enter dabaya! ✅");
+  }
+  if (e.key === "Escape") {
+    console.log("Modal band karo!");
+  }
+});
+_____________________________________________________________________________________
+
+5. mouseover & mouseout — Hover effect ke liye 
+const box = document.querySelector(".box");
+box.addEventListener("mouseover", () => {
+  box.style.backgroundColor = "yellow"; // mouse aaya
+});
+box.addEventListener("mouseout", () => {
+  box.style.backgroundColor = "white";  // mouse gaya
+});
+_____________________________________________________________________________________
+
+ 6. scroll — Page scroll detect karo ki scroll hua hai 
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY; // kitna scroll hua
+  console.log(scrollY);
+
+  if (scrollY > 200) {
+    document.querySelector(".navbar").classList.add("sticky");
+  }
+});
+_____________________________________________________________________________________
+
+7. focus & blur — Input active/inactive
+const input = document.querySelector("#name");
+input.addEventListener("focus", () => {
+  input.style.border = "2px solid blue"; // active hua
+});
+input.addEventListener("blur", () => {
+  input.style.border = "2px solid gray"; // inactive hua
+});
+_____________________________________________________________________________________
+
+ 8. load — Page load hone ke baad
+window.addEventListener("load", () => {
+  console.log("Page poora load ho gaya! ✅");
+  // Yahan se safe hai DOM use karna
+});
+_____________________________________________________________________________________
+
+============================================================================================
+~~~ Event Object (e) — Bahut kaam aata hai isko yd kr lo*****
+btn.addEventListener("click", (e) => {
+  console.log(e.target);      // Kis element pe click hua
+  console.log(e.type);        // "click"
+  console.log(e.clientX);     // Mouse X position
+  console.log(e.clientY);     // Mouse Y position
+  
+  e.preventDefault();         // Default action rokta hai
+  e.stopPropagation();        // Event upar jaane se rokta hai
+});
+_____________________________________________________________________________________
+============================================================================================
+
+~~~ Event Delegation — Smart trick ye hamesha kaam aayegi......
+<ul id="list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+                // ❌ Galat tarika — har li pe alag listener
+                document.querySelectorAll("li").forEach(li => {
+                  li.addEventListener("click", () => console.log("clicked"));
+                });
+
+// ✅ Sahi tarika — parent pe ek listener
+document.getElementById("list").addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    console.log(e.target.textContent + " click hua!");
+  }
+});
+
+// Parent pe ek event lagao — saare children cover ho jaate hainEk br me he .........
+_____________________________________________________________________________________
+============================================================================================
