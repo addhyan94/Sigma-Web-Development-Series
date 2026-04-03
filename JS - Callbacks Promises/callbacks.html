@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks Topic</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Hello Guys!!</h1>
+    <!-- Callback matlab — Ek function jo doosre function ko argument ke roop mein diya jaata hai! -->
+<!-- Real life — Tum pizza order karte ho, bolte ho "Jab ready ho jaaye toh mujhe call karo" — ye callback hai! 🍕 -->
+ <!-- Simple Example se samjhooooooo..................................
+
+// Normal function
+function greet() {
+  console.log("Hello!");
+}
+
+// Callback — function ko argument ki tarah dena
+function doSomething(callback) {
+  console.log("Kaam ho raha hai...");
+  callback(); // baad mein call kiya
+}
+
+doSomething(greet); 
+// Kaam ho raha hai...
+// Hello!
+ -->
+    
+    <script>
+        const secondfn = () => {
+          console.log("first function ke aander ye dusra funstion dal diya fer call back kiya")
+        }
+        
+    const callback = (argmunt) => {
+      console.log(argmunt)
+      secondfn()
+    }
+    
+    console.log("Hello User!... ")
+    const loadScript = (src, callback) => {
+      let sc= document.createElement("script")
+      sc.src = src;
+      sc.onload = callback ("Tiwari_JI")
+      document.head.append(sc)
+    }
+
+    loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
+    
+    </script>
+</body>
+</html>
