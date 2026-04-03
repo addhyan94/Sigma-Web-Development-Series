@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Topic.. </title>
+</head>
+<body>
+    <h1>Hello user! </h1>
+    <script>
+        console.log('Hello Guys');
+        
+        let prom1 = new Promise( (resolve , reject ) => {
+            let num = Math.random()*8;
+            if(num > 5){
+                reject("Aapki call reject ho gayi hai ...") // agar number bada hai 5 se to reject ni hoga ye function agar 5 se chota hai to reject ho jayega or resolve bala ni chalega 
+                
+            }
+            setTimeout(() => {
+                console.log('Yes me chal gaya hu');//ye hamesha chalgea 3 sec bd .. reject ho ya na ho resolve ho ya na ho hamesha calega ..
+                console.log(num);// 3 sec hone ke bd jo uper reject call ke liye bo random number aa rha ahai bo print karega 
+                resolve("I'm resolve")
+            }, 3000);
+        })
+
+        // prom1.then((a) => {
+        //   console.log(a); // ye a resolve ko call karega or uske aander jo ahi bo print karega 
+        // }).catch((err) => {
+        //   console.log(err);
+        // })
+        
+
+        // promise chain methord...
+
+        let prom2 = new Promise( (resolve , reject ) => {
+            let num = Math.random()*8;
+            if(num > 5){
+                reject("Aapki call reject ho gayi hai 222 ...") // agar number bada hai 5 se to reject ni hoga ye function agar 5 se chota hai to reject ho jayega or resolve bala ni chalega 
+                
+            }
+            setTimeout(() => {
+                console.log('Yes me chal gaya hu 22222');//ye hamesha chalgea 3 sec bd .. reject ho ya na ho resolve ho ya na ho hamesha calega ..
+              // console.log(num);// 3 sec hone ke bd jo uper reject call ke liye bo random number aa rha ahai bo print karega 
+                resolve("I'm resolve 22")
+            }, 4000);
+        })
+
+        // const  prom3 = Promise.all([prom1, prom2]);// ye jab dono chal jayengi to aapko result me dekhega 
+        // const  prom3 = Promise.allSettled([prom1, prom2]);// ye jab dono chal jayengi to aapko result me dekhega or ni halegi to aapko result me dikehga agar fullfill hui to chal gaya agar ni hui to ni chala error aa gaya
+        // const  prom3 = Promise.race([prom1, prom2]);// isme aapan promis ki race laga rahe hai jo sabse pahle resolve hogi bo dispay karegi .. baki ni
+        const  prom3 = Promise.any([prom1, prom2]);// koi bhi promise fullfill honi chiye reject ni honi chiaye jo pahel fullfill ho gayi to aa jayega jo reject ho gayi uska error ni aayega 
+        prom3.then((a) => {
+          console.log(a);
+        }).catch((err) => {
+          console.log(err);
+        })
+    </script>
+</body>
+</html>
