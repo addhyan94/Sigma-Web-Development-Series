@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTime & Setintervel</title>
+    <style>
+          .childContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 37px;
+            font-weight: 900;
+            background-color: beige;
+            padding: 14px;
+            margin: 14px;
+            height: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="childContainer">
+        I'm a Box
+    </section>
+    <script>
+        function rendomebg_color(){
+let valueFirst = Math.ceil(0 + Math.random()*225)
+let valuesecond = Math.ceil(0 + Math.random()*225)
+let valuethird = Math.ceil(0 + Math.random()*225)
+return`rgb(${valueFirst}, ${valuesecond}, ${valuethird})`
+}
+
+// setinterval se kya hot ahai ki aapanne kisi bhi element per kuch bhi laga sakte hai to bo her min ya sec automatic local me he reload kr dega or change karta rahega jese neeche ho rha aaapne ne color change bala function banaya tha to us function ko setinterval ko de diya to bo her sec us function ko call kr raha to her sec bo color change ho rha hai... 
+        setInterval(() => {
+            document.querySelector(".childContainer").style.background =  rendomebg_color()        
+        }, 1000);
+        
+        // same ese he ek setTimeout hota hai jo derf ek br run hoga br br ni jese setIntervel me br br run ho rha tha aab bese ni hoga ye ek br hoga jis tim eper aapne dala hai .. 
+        
+        setTimeout(() => {
+            document.querySelector(".childContainer").style.color =  rendomebg_color()        
+        }, 5000);
+        // isme aapan 5 sec bd text ka color chnage kr rahe hai but ek br .. brbr run ni hoga ek br he hoga bus..
+
+    </script>
+</body>
+</html>
