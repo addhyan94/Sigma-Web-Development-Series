@@ -1,0 +1,4 @@
+https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event 
+
+yaha jake sare events ko dekh sakte hai ho click karne per use honge...
+
