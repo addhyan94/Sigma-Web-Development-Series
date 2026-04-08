@@ -1,1 +1,0 @@
-// Print " You can Drive" or "You can't Drive" Base on age Being Greater then 18 Using ternary Operator. 
