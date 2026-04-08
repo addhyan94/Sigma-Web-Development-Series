@@ -1,0 +1,9 @@
+📦 Variables = data store karne ke dabba.
+• var — purana tarika (avoid karo)
+• let — changeable value
+• const — fixed value (change nahi hoti)
+
+Example:
+let name = "Rahul";
+const age = 20;
+age = 21; // ❌ Error! const change nahi hoti
