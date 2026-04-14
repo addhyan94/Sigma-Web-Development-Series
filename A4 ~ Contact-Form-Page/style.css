@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit';
+    background: linear-gradient(#ffdad5, #fff7f9);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+
+.title {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+
+.title hr {
+    border: none;
+    width: 386px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.input {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.input:focus{
+    border: 2px solid #ff994f;
+}
+
+.input::placeholder{
+    color: #a9a9a9;
+}
+.submit-btn{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background:linear-gradient(270deg, #ff994f,#fa6d86) ;
+    cursor: pointer;
+}
+
+.comtact-right img{
+    height: 300px;
+    border-radius: 50px;
+    
+}
+
+@media (max-width:830px){
+    .input{
+        width: 80vw;
+
+    }
+    .submit-btn{
+        width: 80vw;
+    }
+.comtact-right{
+    display: none;
+}
+}
