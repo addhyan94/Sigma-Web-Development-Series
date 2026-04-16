@@ -1,0 +1,9 @@
+JS ke main data types:
+
+String  → "Hello"           (text)
+Number  → 42, 3.14          (numbers)
+Boolean → true / false      (haan/na)
+Array   → [1, 2, 3]         (list)
+Object  → {name: "Rahul"}   (key-value)
+
+typeof variable  →  type batata hai
