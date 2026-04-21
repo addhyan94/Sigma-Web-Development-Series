@@ -6,4 +6,5 @@
 Example:
 let name = "Rahul";
 const age = 20;
-age = 21; // ❌ Error! const change nahi hoti
+age = 21; 
+// ❌ Error! const change nahi hoti 
