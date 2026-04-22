@@ -1,0 +1,9 @@
+Loop = ek kaam baar baar karna
+
+// For loop
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+// Array ke saath forEach
+["a","b","c"].forEach(x => console.log(x));
