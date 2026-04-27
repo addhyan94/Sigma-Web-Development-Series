@@ -1,0 +1,14 @@
+Browser har HTML element ko ek object ki tarah treat karta hai.
+JS se hum un elements ko pakad ke badal sakte hain!
+
+// Element pakadna
+document.getElementById("myId")
+document.querySelector(".myClass")
+
+// Text badalna
+element.textContent = "Naya text"
+element.innerHTML = "<b>Bold text</b>"
+
+// Style badalna
+element.style.color = "red"
+element.style.fontSize = "20px"
