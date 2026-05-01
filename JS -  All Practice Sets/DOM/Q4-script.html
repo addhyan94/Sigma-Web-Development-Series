@@ -1,0 +1,19 @@
+<!-- Question => id="list" wali ul mein innerHTML se 3 li add karo — "Roti", "Sabzi", "Dal". -->
+
+<!DOCTYPE html>
+<html>
+<head><title>DOM Practice</title></head>
+<body>
+
+  <h1 id="heading">Purana Heading</h1>
+  <p id="para">Main ek paragraph hun</p>
+  <div id="box">Main ek box hun</div>
+  <ul id="list"></ul>
+  <p id="big">Main chhota hun</p>
+
+  <script>
+    let list = document.getElementById("list");
+    list.innerHTML="<li>Roti</li><li>Sabzi</li><li>Dal</li>" 
+  </script>
+</body>
+</html>
