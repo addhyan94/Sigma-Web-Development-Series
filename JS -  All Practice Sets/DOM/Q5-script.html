@@ -1,0 +1,20 @@
+<!-- Question=> id="box" wale div mein classList.add se "active" class add karo. Phir console mein check karo ki class add hui ya nahi — console.log(box.classList). -->
+
+<!DOCTYPE html>
+<html>
+<head><title>DOM Practice</title></head>
+<body>
+
+  <h1 id="heading">Purana Heading</h1>
+  <p id="para">Main ek paragraph hun</p>
+  <div id="box">Main ek box hun</div>
+  <ul id="list"></ul>
+  <p id="big">Main chhota hun</p>
+
+  <script>
+    let box = document.getElementById("box");
+    box.classList.add("active");
+    console.log(box.classList);
+  </script>
+</body>
+</html>
