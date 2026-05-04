@@ -1,0 +1,29 @@
+<!-- Question =>  id="btn" button pe click event lagao — click hone par id="msg" ka text "Button dab gaya!" ho jaaye. -->
+
+ <!DOCTYPE html>
+<html>
+<head><title>Events Practice</title></head>
+<body>
+
+  <button id="btn">Dabaao Mujhe</button>
+  <p id="msg">Abhi tak nahi dabaya</p>
+
+  <button id="counter-btn">Click Counter: 0</button>
+
+  <input id="inp" placeholder="Kuch type karo...">
+  <p id="out">Yahan dikhega</p>
+
+  <div id="box" style="padding:30px; background:#eee; display:inline-block; ">
+    Mouse lao yahaan
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+   <script>
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", (e)=>{
+        document.getElementById("msg").textContent="Button dab gaya!"
+        document.getElementById("msg").style.color="aqua"
+    })
+   </script>
+</body>
+</html>
