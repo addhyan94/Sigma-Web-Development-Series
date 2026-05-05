@@ -1,0 +1,28 @@
+<!-- Question =>  id="counter-btn" pe click event lagao — har click par counter 1 badhta jaaye. Button ka text "Click Counter: 1", "Click Counter: 2" aisa update hota rahe. -->
+
+ <!DOCTYPE html>
+<html>
+<head><title>Events Practice</title></head>
+<body>
+
+  <button id="btn">Dabaao Mujhe</button>
+  <p id="msg">Abhi tak nahi dabaya</p>
+
+  <button id="counter-btn">Click Counter: </button>
+
+  <input id="inp" placeholder="Kuch type karo...">
+  <p id="out">Yahan dikhega</p>
+
+  <div id="box" style="padding:30px; background:#eee; display:inline-block; ">
+    Mouse lao yahaan
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+   <script>
+    let Btn = document.getElementById("counter-btn");
+    Btn.addEventListener("click",(event)=>{
+        Btn.textContent=`Click Counter: ${event.detail}`
+    })
+   </script>
+</body>
+</html>
