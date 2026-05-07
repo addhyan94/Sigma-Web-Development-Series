@@ -1,0 +1,29 @@
+<!-- Question =>   id="inp" input mein "input" event lagao — jo bhi type ho woh real time mein id="out" wale p mein dikhta rahe. -->
+
+ <!DOCTYPE html>
+<html>
+<head><title>Events Practice</title></head>
+<body>
+
+  <button id="btn">Dabaao Mujhe</button>
+  <p id="msg">Abhi tak nahi dabaya</p>
+
+  <button id="counter-btn">Click Counter: 0</button>
+
+  <input id="inp" placeholder="Kuch type karo...">
+  <p id="out">Yahan dikhega</p>
+
+  <div id="box" style="padding:30px; background:#eee; display:inline-block; ">
+    Mouse lao yahaan
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+   <script>
+let Input = document.querySelector("#inp");
+Input.addEventListener("input", (event)=>{
+    let outtxt=document.getElementById("out")
+    outtxt.textContent=event.target.value
+})
+   </script>
+</body>
+</html>
