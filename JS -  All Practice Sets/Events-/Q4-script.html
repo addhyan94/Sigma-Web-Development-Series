@@ -1,0 +1,31 @@
+<!-- Question =>  id="box" pe mouseover aur mouseout event lagao — mouse aane par background lightblue ho, jaane par wapas #eee ho. -->
+
+ <!DOCTYPE html>
+<html>
+<head><title>Events Practice</title></head>
+<body>
+
+  <button id="btn">Dabaao Mujhe</button>
+  <p id="msg">Abhi tak nahi dabaya</p>
+
+  <button id="counter-btn">Click Counter: 0</button>
+
+  <input id="inp" placeholder="Kuch type karo...">
+  <p id="out">Yahan dikhega</p>
+
+  <div id="box" style="padding:30px; background:#eee; display:inline-block; ">
+    Mouse lao yahaan
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+   <script>
+let box = document.getElementById("box");
+box.addEventListener("mouseover",(e)=>{
+    box.style.backgroundColor="lightblue";
+})
+box.addEventListener("mouseout",(e)=>{
+    box.style.backgroundColor="#eee";
+})
+   </script>
+</body>
+</html>
