@@ -1,0 +1,36 @@
+// Class add/remove karna
+element.classList.add("active")
+element.classList.remove("active")
+_____________________________________________________________________________________________
+~~~ Event Object (e) — Bahut kaam aata hai isko yd kr lo*****
+btn.addEventListener("click", (e) => {
+  console.log(e.target);      // Kis element pe click hua
+  console.log(e.type);        // "click"
+  console.log(e.clientX);     // Mouse X position
+  console.log(e.clientY);     // Mouse Y position
+  
+  e.preventDefault();         // Default action rokta hai
+  e.stopPropagation();        // Event upar jaane se rokta hai
+});
+_____________________________________________________________________________________
+============================================================================================
+
+~~~ Event Delegation — Smart trick ye hamesha kaam aayegi......
+<ul id="list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+                // ❌ Galat tarika — har li pe alag listener
+                document.querySelectorAll("li").forEach(li => {
+                  li.addEventListener("click", () => console.log("clicked"));
+                });
+
+// ✅ Sahi tarika — parent pe ek listener
+document.getElementById("list").addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    console.log(e.target.textContent + " click hua!");
+  }
+});
+
+// Parent pe ek event lagao — saare children cover ho jaate hainEk br me he .........
