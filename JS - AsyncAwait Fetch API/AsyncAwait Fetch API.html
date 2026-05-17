@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsyncAwait Fetch API</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Hello User!!! ..</h1>
+    <script>
+        console.log('Hello Guys!!!! ...');
+
+        // simulate gettomg data fro, a server...
+        // async function shownum() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve(4456)
+        //         }, 3500);
+        //     })
+        // }
+
+
+        async function shownum() {
+            let x = await fetch('https://jsonplaceholder.typicode.com/todos/1') // ye line ek promise return kar rahi hai 
+            let data = await x.json()
+            console.log(data);
+            return 4456;
+
+                // .then(response => response.json())
+                // .then(json => console.log(json))
+        }
+
+        async function main() {
+            console.log('Data is uploding');
+            console.log('Data is Loding');
+            // console.log('Data also loding');
+            lodingtime();
+            let data = await shownum();
+            console.log(data);
+
+            console.log('Processing is Completed ...');
+            console.log('This is a main fun ');
+        }
+        main();
+
+        function lodingtime() {
+            for (let i = 0; i < 5; ++i) {
+                const value = i;
+                console.log(i + "%");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
