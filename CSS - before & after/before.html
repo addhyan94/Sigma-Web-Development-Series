@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::Before Propartys..</title>
+    <style>
+        /* .text::before {
+  content: "⭐ "; // jo HTML me code likha hai usko change ni karega but uske aage ye bo laga denga jo baha se .. i meen result change karega bina html me change kiye hue
+} */
+ .text::before { 
+   content: "NEW ";/*//::before ek element ki tarah behave karta hai — tum isko style kar sakte ho! */
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  background: yellow;
+
+}
+.title::before {
+  content: "🚀 ";
+  color: orange;
+  font-size: 20px;
+}
+.card {
+  position: relative;   /* yeh zaroori hai! */
+}
+
+.card::before {
+  content: "";          /* empty hai, text nahi chahiye */
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: blue;
+}
+
+
+    </style>
+</head>
+<body>
+    <h2 class="title">My Portfolio</h2>
+    <p class="text">Mera Naam Addhyan Hai</p>
+    <div class="card">
+        this is card
+    </div>
+</body>
+</html>
