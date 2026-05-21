@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-sec {
+    background-color: rgb(139, 4, 13);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    height: 88vh;
+    width: 80vw;
+    background-color: white;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    border-radius: 40px;
+}
+
+.left-sec img {
+    height: 85vh;
+    width: 36vw;
+    border-radius: 30px;
+    margin-left: .7rem;
+    margin-top: .6rem;
+
+}
+
+.right-sec {
+    display: flex;
+    border: 2px solid black;
+    height: 80%;
+    width: 48%;
+    margin: auto;
+}
+
+.main-box {
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+}
+
+.backbtnn {
+    background-color: transparent;
+    border: none;
+    height: 1.4rem;
+    width: 1.9rem;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 1.4em;
+}
+
+.txt1 {
+    font-size: 1.3em;
+    margin-bottom: .3rem;
+    padding-left: .5em;
+}
+.txt1 h1{
+    font-weight: 200;
+}
+.txt2 {
+    font: x-small;
+    display: flex;
+}
+
+.txt2 a {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 1.4em;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+}
+
+/* bus aab sare chezo me CSS lagani hai or btns lagane hai bus  */
